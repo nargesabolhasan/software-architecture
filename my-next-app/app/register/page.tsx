@@ -39,7 +39,7 @@ export default function RegisterPage() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/register", {
+      const response = await fetch("http://localhost:5000/api/register", {
         method: "POST",
         credentials: "include",
         headers: {

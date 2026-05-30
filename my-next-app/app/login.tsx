@@ -40,8 +40,7 @@ export default function LoginPage() {
     }
 
     try {
-
-      const response = await fetch("http://localhost:3000/api/login", {
+      const response = await fetch("http://localhost:5000/api/login", {
         method: "POST",
         credentials: "include",
         headers: {

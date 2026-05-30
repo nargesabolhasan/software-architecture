@@ -10,7 +10,7 @@ export default function WelcomePage() {
 
   useEffect(() => {
     const loadProfile = async () => {
-      const response = await fetch("http://localhost:3000/api/profile", {
+      const response = await fetch("http://localhost:5000/api/profile", {
         credentials: "include",
       });
 
@@ -28,7 +28,7 @@ export default function WelcomePage() {
   }, [router]);
 
   const logout = async () => {
-    await fetch("http://localhost:3000/api/logout", {
+    await fetch("http://localhost:5000/api/logout", {
       method: "POST",
       credentials: "include",
     });

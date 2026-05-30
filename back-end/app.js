@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: "http://localhost:4000",
     credentials: true,
-  })
+  }),
 );
 
 app.use(cookieParser());
@@ -18,6 +18,6 @@ app.use(express.json());
 
 app.use("/api", authRoutes);
 
-app.listen(3000, () => {
-  console.log("Server started at 3000");
+app.listen(5000, () => {
+  console.log("Server started at 5000");
 });
